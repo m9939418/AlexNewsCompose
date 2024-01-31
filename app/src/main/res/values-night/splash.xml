@@ -3,5 +3,7 @@
     <style name="App.Starting.Theme" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">#1c1e21</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <!--Splash動畫結束要執行的主要樣式名稱-->
+        <item name="postSplashScreenTheme">@style/Theme.AlexNewsCompose</item>
     </style>
 </resources>
