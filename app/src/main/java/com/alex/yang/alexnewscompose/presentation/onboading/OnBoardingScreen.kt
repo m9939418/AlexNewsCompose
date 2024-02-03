@@ -21,10 +21,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.alex.yang.alexnewscompose.presentation.common.NewsButton
 import com.alex.yang.alexnewscompose.presentation.common.NewsTextButton
-import com.alex.yang.alexnewscompose.presentation.onboading.components.PagerIndicator
 import com.alex.yang.alexnewscompose.presentation.onboading.Dimens.MediumPadding2
 import com.alex.yang.alexnewscompose.presentation.onboading.Dimens.PageIndicatorWidth
 import com.alex.yang.alexnewscompose.presentation.onboading.components.OnBoardingPage
+import com.alex.yang.alexnewscompose.presentation.onboading.components.PagerIndicator
 import com.alex.yang.alexnewscompose.ui.theme.AlexNewsComposeTheme
 import kotlinx.coroutines.launch
 
