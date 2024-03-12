@@ -1,4 +1,4 @@
-package com.alex.yang.alexnewscompose.presentation.onboading.components
+package com.alex.yang.alexnewscompose.onboading.presentation.components
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
 import androidx.compose.foundation.Image
@@ -18,9 +18,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import com.alex.yang.alexnewscompose.R
-import com.alex.yang.alexnewscompose.presentation.onboading.Dimens.MediumPadding1
-import com.alex.yang.alexnewscompose.presentation.onboading.Dimens.MediumPadding2
-import com.alex.yang.alexnewscompose.presentation.onboading.Page
+import com.alex.yang.alexnewscompose.core.Dimens.MediumPadding1
+import com.alex.yang.alexnewscompose.core.Dimens.MediumPadding2
+import com.alex.yang.alexnewscompose.onboading.presentation.Page
 import com.alex.yang.alexnewscompose.ui.theme.AlexNewsComposeTheme
 
 @Composable

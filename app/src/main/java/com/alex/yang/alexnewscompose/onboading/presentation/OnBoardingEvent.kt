@@ -1,4 +1,4 @@
-package com.alex.yang.alexnewscompose.presentation.onboading
+package com.alex.yang.alexnewscompose.onboading.presentation
 
 sealed class OnBoardingEvent {
 

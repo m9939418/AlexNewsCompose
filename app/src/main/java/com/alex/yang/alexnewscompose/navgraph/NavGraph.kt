@@ -1,4 +1,4 @@
-package com.alex.yang.alexnewscompose.presentation.navgraph
+package com.alex.yang.alexnewscompose.navgraph
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -7,8 +7,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
-import com.alex.yang.alexnewscompose.presentation.onboading.OnBoardingScreen
-import com.alex.yang.alexnewscompose.presentation.onboading.OnBoardingViewModel
+import com.alex.yang.alexnewscompose.onboading.presentation.OnBoardingScreen
+import com.alex.yang.alexnewscompose.onboading.presentation.OnBoardingViewModel
 
 
 @Composable

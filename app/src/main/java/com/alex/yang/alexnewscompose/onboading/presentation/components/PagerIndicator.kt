@@ -1,4 +1,4 @@
-package com.alex.yang.alexnewscompose.presentation.onboading.components
+package com.alex.yang.alexnewscompose.onboading.presentation.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.alex.yang.alexnewscompose.presentation.onboading.Dimens.IndicatorSize
+import com.alex.yang.alexnewscompose.core.Dimens.IndicatorSize
 import com.alex.yang.alexnewscompose.ui.theme.AlexNewsComposeTheme
 import com.alex.yang.alexnewscompose.ui.theme.BlueGray
 
@@ -25,7 +25,10 @@ fun PagerIndicator(
     selectedColor: Color = MaterialTheme.colorScheme.primary,
     unselectedColor: Color = BlueGray,
 ) {
-    Row(modifier = modifier, horizontalArrangement = Arrangement.SpaceBetween) {
+    Row(
+        modifier = modifier,
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
         repeat(pageSize) { page ->
             Box(
                 modifier = Modifier
@@ -39,7 +42,7 @@ fun PagerIndicator(
 
 @Preview
 @Composable
-fun PagerIndicatorPreview(){
+fun PagerIndicatorPreview() {
     AlexNewsComposeTheme {
         PagerIndicator(pageSize = 5, selectedPage = 2)
     }

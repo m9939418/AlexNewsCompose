@@ -1,11 +1,11 @@
-package com.alex.yang.alexnewscompose.di
+package com.alex.yang.alexnewscompose.core.presentation.di
 
 import android.app.Application
-import com.alex.yang.alexnewscompose.data.repository.LocalUserMangerImpl
-import com.alex.yang.alexnewscompose.domain.manager.LocalUserManger
-import com.alex.yang.alexnewscompose.domain.usecase.AppEntryUseCase
-import com.alex.yang.alexnewscompose.domain.usecase.ReadAppEntry
-import com.alex.yang.alexnewscompose.domain.usecase.SaveAppEntry
+import com.alex.yang.alexnewscompose.core.data.repository.LocalUserMangerImpl
+import com.alex.yang.alexnewscompose.core.domain.repository.LocalUserManger
+import com.alex.yang.alexnewscompose.main.domain.usecase.AppEntryUseCase
+import com.alex.yang.alexnewscompose.main.domain.usecase.ReadAppEntry
+import com.alex.yang.alexnewscompose.main.domain.usecase.SaveAppEntry
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

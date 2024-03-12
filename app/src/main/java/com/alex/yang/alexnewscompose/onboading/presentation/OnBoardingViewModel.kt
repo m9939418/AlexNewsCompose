@@ -1,8 +1,8 @@
-package com.alex.yang.alexnewscompose.presentation.onboading
+package com.alex.yang.alexnewscompose.onboading.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.alex.yang.alexnewscompose.domain.usecase.AppEntryUseCase
+import com.alex.yang.alexnewscompose.main.domain.usecase.AppEntryUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

@@ -13,7 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
-import com.alex.yang.alexnewscompose.presentation.navgraph.NavGraph
+import com.alex.yang.alexnewscompose.main.prsentation.MainViewModel
+import com.alex.yang.alexnewscompose.navgraph.NavGraph
 import com.alex.yang.alexnewscompose.ui.theme.AlexNewsComposeTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint
@@ -41,7 +42,10 @@ class MainActivity : ComponentActivity() {
                     )
                 }
 
-                Box(modifier = Modifier.background(color = MaterialTheme.colorScheme.background)) {
+                Box(
+                    modifier = Modifier
+                        .background(color = MaterialTheme.colorScheme.background)
+                ) {
                     val startDestination = viewModel.startDestination
                     NavGraph(startDestination = startDestination)
                 }

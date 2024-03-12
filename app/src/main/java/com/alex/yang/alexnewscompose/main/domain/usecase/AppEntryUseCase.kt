@@ -1,4 +1,4 @@
-package com.alex.yang.alexnewscompose.domain.usecase
+package com.alex.yang.alexnewscompose.main.domain.usecase
 
 data class AppEntryUseCase(
     val readAppEntry: ReadAppEntry,

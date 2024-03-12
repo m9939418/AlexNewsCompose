@@ -1,4 +1,4 @@
-package com.alex.yang.alexnewscompose.presentation.navgraph
+package com.alex.yang.alexnewscompose.navgraph
 
 sealed class Route(
     val route: String

@@ -1,4 +1,4 @@
-package com.alex.yang.alexnewscompose.presentation.onboading
+package com.alex.yang.alexnewscompose.onboading.presentation
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
@@ -19,12 +19,12 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.alex.yang.alexnewscompose.presentation.common.NewsButton
-import com.alex.yang.alexnewscompose.presentation.common.NewsTextButton
-import com.alex.yang.alexnewscompose.presentation.onboading.Dimens.MediumPadding2
-import com.alex.yang.alexnewscompose.presentation.onboading.Dimens.PageIndicatorWidth
-import com.alex.yang.alexnewscompose.presentation.onboading.components.OnBoardingPage
-import com.alex.yang.alexnewscompose.presentation.onboading.components.PagerIndicator
+import com.alex.yang.alexnewscompose.core.presentation.components.NewsButton
+import com.alex.yang.alexnewscompose.core.presentation.components.NewsTextButton
+import com.alex.yang.alexnewscompose.core.Dimens.MediumPadding2
+import com.alex.yang.alexnewscompose.core.Dimens.PageIndicatorWidth
+import com.alex.yang.alexnewscompose.onboading.presentation.components.OnBoardingPage
+import com.alex.yang.alexnewscompose.onboading.presentation.components.PagerIndicator
 import com.alex.yang.alexnewscompose.ui.theme.AlexNewsComposeTheme
 import kotlinx.coroutines.launch
 
@@ -35,7 +35,10 @@ fun OnBoardingScreen(
     event: (OnBoardingEvent) -> Unit
 ) {
 
-    Column(modifier = Modifier.fillMaxSize()) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+    ) {
         val pagerState = rememberPagerState(initialPage = 0) {
             pages.size
         }
@@ -66,7 +69,8 @@ fun OnBoardingScreen(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             PagerIndicator(
-                modifier = Modifier.width(PageIndicatorWidth),
+                modifier = Modifier
+                    .width(PageIndicatorWidth),
                 pageSize = pages.size,
                 selectedPage = pagerState.currentPage,
             )

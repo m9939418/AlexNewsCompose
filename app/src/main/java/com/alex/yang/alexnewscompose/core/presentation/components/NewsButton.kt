@@ -1,8 +1,6 @@
-package com.alex.yang.alexnewscompose.presentation.common
+package com.alex.yang.alexnewscompose.core.presentation.components
 
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults

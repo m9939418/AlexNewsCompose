@@ -1,4 +1,4 @@
-package com.alex.yang.alexnewscompose.presentation.onboading
+package com.alex.yang.alexnewscompose.core
 
 import androidx.compose.ui.unit.dp
 
