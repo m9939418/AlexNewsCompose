@@ -1,32 +1,34 @@
-package com.alex.yang.alexnewscompose.home.data.repository
+package com.alex.yang.alexnewscompose.searchnews.data.repostiory
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import com.alex.yang.alexnewscompose.home.data.remote.NewsPagingSource
 import com.alex.yang.alexnewscompose.core.data.remote.api.NewsApi
 import com.alex.yang.alexnewscompose.home.domain.model.Article
-import com.alex.yang.alexnewscompose.home.domain.repository.INewsRepository
+import com.alex.yang.alexnewscompose.searchnews.data.remote.SearchNewsPagingSource
+import com.alex.yang.alexnewscompose.searchnews.domain.repository.ISearchNewsRepository
 import kotlinx.coroutines.flow.Flow
 
 /**
- * Created by AlexYang on 2024/3/12.
+ * Created by AlexYang on 2024/3/14.
  *
  *
  */
-class NewsRepositoryImpl(
+class SearchNewsRepositoryImpl(
     private val newsApi: NewsApi,
-) : INewsRepository {
+) : ISearchNewsRepository {
 
-    override fun getNews(sources: List<String>): Flow<PagingData<Article>> {
+    override fun searchNews(searchQuery: String, sources: List<String>): Flow<PagingData<Article>> {
         return Pager(
             config = PagingConfig(pageSize = 10),
             pagingSourceFactory = {
-                NewsPagingSource(
+                SearchNewsPagingSource(
                     newsApi = newsApi,
+                    searchQuery = searchQuery,
                     sources = sources.joinToString(separator = ",")
                 )
             }
         ).flow
     }
+
 }

@@ -14,6 +14,8 @@ import com.alex.yang.alexnewscompose.home.presentation.HomeScreen
 import com.alex.yang.alexnewscompose.home.presentation.HomeViewModel
 import com.alex.yang.alexnewscompose.onboading.presentation.OnBoardingScreen
 import com.alex.yang.alexnewscompose.onboading.presentation.OnBoardingViewModel
+import com.alex.yang.alexnewscompose.searchnews.presentation.SearchNewsScreen
+import com.alex.yang.alexnewscompose.searchnews.presentation.SearchNewsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
@@ -43,11 +45,17 @@ fun NavGraph(
             composable(
                 route = Route.NewsNavigationScreen.route
             ) {
-                val viewModel: HomeViewModel = hiltViewModel()
-                val articles = viewModel.news.collectAsLazyPagingItems()
-                HomeScreen(
-                    articles = articles,
-                    navigate = {}
+//                val viewModel: HomeViewModel = hiltViewModel()
+//                val articles = viewModel.news.collectAsLazyPagingItems()
+//                HomeScreen(
+//                    articles = articles,
+//                    navigate = {}
+//                )
+                val viewModel: SearchNewsViewModel = hiltViewModel()
+                SearchNewsScreen(
+                    state = viewModel.state.value,
+                    event = viewModel::onEvent,
+                    navigate = { }
                 )
             }
         }

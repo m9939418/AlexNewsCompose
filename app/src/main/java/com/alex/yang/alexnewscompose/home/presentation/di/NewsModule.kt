@@ -1,6 +1,6 @@
 package com.alex.yang.alexnewscompose.home.presentation.di
 
-import com.alex.yang.alexnewscompose.home.data.remote.api.NewsApi
+import com.alex.yang.alexnewscompose.core.data.remote.api.NewsApi
 import com.alex.yang.alexnewscompose.home.data.repository.NewsRepositoryImpl
 import com.alex.yang.alexnewscompose.home.domain.repository.INewsRepository
 import com.alex.yang.alexnewscompose.home.domain.usecase.GetNew

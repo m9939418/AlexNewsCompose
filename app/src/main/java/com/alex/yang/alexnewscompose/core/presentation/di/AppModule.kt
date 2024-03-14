@@ -3,7 +3,7 @@ package com.alex.yang.alexnewscompose.core.presentation.di
 import android.app.Application
 import com.alex.yang.alexnewscompose.core.data.repository.LocalUserMangerImpl
 import com.alex.yang.alexnewscompose.core.domain.repository.LocalUserManger
-import com.alex.yang.alexnewscompose.home.data.remote.api.NewsApi
+import com.alex.yang.alexnewscompose.core.data.remote.api.NewsApi
 import com.alex.yang.alexnewscompose.main.domain.usecase.AppEntryUseCase
 import com.alex.yang.alexnewscompose.main.domain.usecase.ReadAppEntry
 import com.alex.yang.alexnewscompose.main.domain.usecase.SaveAppEntry
